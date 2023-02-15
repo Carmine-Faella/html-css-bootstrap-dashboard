@@ -18,6 +18,7 @@
 
 :root{
     --bg-color-primary:rgb(27,114,232);
+    --bg-color-secondary:rgb(22,88,180);
 }
 
 header{
@@ -38,7 +39,9 @@ aside{
     background-color: var(--bg-color-primary);
 }
 
- 
+.badgeboo{
+    background-color: var(--bg-color-secondary);
+}
 
 
 
