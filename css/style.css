@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Debug*/
+
+.debug header{
+    background-color: red;
+}
+
+.debug aside{
+    background-color: black;
+}
+
+.debug #cnt{
+    background-color: yellow;
+}
+
+/*Regole CSS*/
+
+header{
+    height: 70px;
+}
+
+aside{
+    width: 60px;
+    height: calc(100vh - 70px);
+}
+
+#cnt{
+    height: calc(100vh - 70px);
+    width: calc(100% - 60px);
+}
+
+
+
+
+
+
+
+
+/*Regole Responsive*/
+
+@media screen and (min-width:768px){
+    
+    aside{
+        width: 200px;
+    }
+    
+    
+    #cnt{
+        width: calc(100% - 200px);
+    }
+    
+}
