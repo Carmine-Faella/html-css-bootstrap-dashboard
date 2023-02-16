@@ -28,14 +28,34 @@
                 <section id="top-bar" class="text-white">
 
                     <div class="container-fluid">
-                        <div class="row py-5 w-100">
-                          <div class="col-12 col-sm-4 order-sm-3 py-3 text-md-end">
-                            <h4>Nuovo studente</h4>
+                        <div class="row py-5">
+                          <div class="col-12 col-sm-3 order-sm-3 py-3 text-md-end">
+                            <h4>Nuovo studente <button class="btn border border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                                </div>
+                            </h4>
+                           </div>
+                            
+                          <div class="col-12 col-sm-6 order-sm-1 py-3">
+                            <h1>Boolean <span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Piano Blaze</span></h1>
+                            <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">3 app</span></li>
+                                  <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean mobile app</span></li>
+                                  <li><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean web app</span></li>
+                                  <li><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean blog app</span></li>
+                                </ol>
+                              </nav>
                           </div>
-                          <div class="col-12 col-sm-4 order-sm-1 py-3">
-                            <h1>Boolean <span class="badge rounded-pill text-white fs-6 badgeboo">Piano Blaze</span></h1>
-                          </div>
-                          <div class="col-12 col-sm-4 order-sm-2 py-3">
+                          <div class="col-12 col-sm-3 order-sm-2 py-3">
                             <p>Studenti online negli ultimi 30 minuti</p>
                             <div class="display-5">125</div>
                           </div>
@@ -48,7 +68,7 @@
 
                     <div class="container-fluid d-lg-flex">
 
-                        <div class="row flex-lg-column flex-grow-1 p-2 gy-2">
+                        <div class="row flex-lg-column g-2 pt-3" id="row-1">
                             
                             <div class="col-12">
 
@@ -61,79 +81,79 @@
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                 <th scope="col">Nome</th>
-                                                 <th scope="col">Data inizio</th>
-                                                 <th scope="col">ROI</th>
-                                                 <th scope="col">Stato</th>
-                                                 <th scope="col">Azioni</th>
+                                                    <th scope="col">Nome</th>
+                                                    <th scope="col">Data inizio</th>
+                                                    <th scope="col">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                              <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 76</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 77</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 78</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 79</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 80</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 81</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row">Classe 82</th>
-                                                <td>15 febbraio 2021</td>
-                                                <td>20%</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                              </tr>
-                                            </tbody>
-                                        </table>
+                                                <tr>
+                                                    <th scope="row">Classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Classe 76</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Classe 77</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Classe 78</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Classe 79</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Classe 80</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Classe 81</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">Classe 82</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Stato</td>
+                                                    <td>Azioni</td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
 
                                     </div>
                                 </div>
     
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-12 pt-2">
 
                                 <div class="card">
                                     <div class="card-header">
@@ -179,7 +199,7 @@
 
                         </div>
 
-                        <div class="row flex-lg-column p-2 gy-2">
+                        <div class="row flex-lg-column g-2 ms-lg-2 pt-3" id="row-2">
 
                             <div class="col-12">
 
@@ -207,9 +227,9 @@
     
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-12 pt-2 pb-2">
 
-                                <div class="card" style="width: 23rem;">
+                                <div class="card">
                                     <img src="img/stats.jpeg" class="card-img-top" alt="stats">
                                     <div class="card-body">
                                       <h5 class="card-title">Utenti attivi</h5>
@@ -258,3 +278,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
+

@@ -10,15 +10,12 @@
     background-color: black;
 }
 
-.debug #cnt{
-    background-color: yellow;
-}
-
 /*Regole CSS*/
 
 :root{
     --bg-color-primary:rgb(27,114,232);
     --bg-color-secondary:rgb(22,88,180);
+    --bg-color-cnt:rgb(248,249,250);
 }
 
 header{
@@ -33,6 +30,7 @@ aside{
 #cnt{
     height: calc(100vh - 70px);
     width: calc(100% - 60px);
+    background-color:var(--bg-color-cnt) ;
 }
 
 #top-bar{
@@ -42,6 +40,8 @@ aside{
 .badgeboo{
     background-color: var(--bg-color-secondary);
 }
+
+
 
 
 
@@ -60,6 +60,14 @@ aside{
     
     #cnt{
         width: calc(100% - 150px);
+    }
+
+    #row-1{
+        width: 60%;
+    }
+    
+    #row-2{
+        width: 40%;
     }
     
 }
