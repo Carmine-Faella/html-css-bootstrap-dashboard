@@ -89,28 +89,91 @@
                     <div class="container-fluid">
                         <div class="row py-3">
                           <div class="col-12 col-sm-3 order-sm-3 py-3">
-                            <h4>Nuovo studente <button class="btn border border-white ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
+                            <h4 class="d-inline-block pe-3">Nuovo studente</h4>
+
+                                <button class="btn border border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
 
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">offcanvas</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                              <label for="inputEmail4" class="form-label">Nome</label>
+                                              <input type="text" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputPassword4" class="form-label">Cognome</label>
+                                              <input type="text" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1">                                                  
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>                                                        
+                                            <div class="col-12">
+                                              <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                              <input type="text" class="form-control" id="inputAddress2">
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="inputCity" class="form-label">Citt&agrave;</label>
+                                              <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                              <label for="inputState" class="form-label">Stato</label>
+                                              <select id="inputState" class="form-select">
+                                                <option selected>Scegli...</option>
+                                                <option>...</option>
+                                              </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                              <label for="inputZip" class="form-label">CAP</label>
+                                              <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputPassword4" class="form-label">Foto</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" placeholder="Nessun file selezionato">                                                  
+                                                </div>
+                                            </div>                                             
+                                            <div class="col-12">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                  Seleziona per proseguire
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <button type="submit" class="btn btn-primary">Salva</button>
+                                              <button type="reset" class="btn bg-warning">Svuota</button>
+                                            </div>
+                                          </form>
+                                          
+                                    </div>
                                 </div>
-                                <div class="offcanvas-body">
-                                    ...
-                                </div>
-                                </div>
-                            </h4>
+
                            </div>
                             
                           <div class="col-12 col-sm-6 order-sm-1 py-3">
                             <h1>Boolean <span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Piano Blaze</span></h1>
                             <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">3 app</span></li>
-                                  <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean mobile app</span></li>
-                                  <li><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean web app</span></li>
-                                  <li><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean blog app</span></li>
+                                  <li class="breadcrumb-item p-1"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">3 app</span></li>
+                                  <li class="breadcrumb-item active p-1 d-none d-lg-inline-block" aria-current="page"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean mobile app</span></li>
+                                  <li class="breadcrumb-item active p-1 d-lg-none" aria-current="page"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal"><i class="fa-solid fa-plus"></i></span></li>
+                                  <li class="p-1 d-none d-lg-inline-block"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean web app</span></li>
+                                  <li class="p-1 d-none d-lg-inline-block"><span class="badge rounded-pill text-white fs-6 badgeboo fw-normal">Boolean blog app</span></li>
                                 </ol>
                               </nav>
                           </div>
