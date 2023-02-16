@@ -9,12 +9,13 @@
 :root{
     --bg-color-primary:rgb(27,114,232);
     --bg-color-secondary:rgb(22,88,180);
-    --bg-color-cnt:rgb(248,249,250);
+    --bg-color-cnt:rgb(252, 248, 248);
     --bg-color-aside:rgb(7,32,54);
 }
 
 header{
     height: 70px;
+    background-color: var(--bg-color-cnt);
 }
 
 aside{
@@ -38,6 +39,13 @@ aside{
     background-color: var(--bg-color-secondary);
 }
 
+aside nav li:hover{
+    background-color: grey;
+}
+
+#img-logo-small{
+    width: 70px;
+}
 
 
 
