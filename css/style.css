@@ -4,18 +4,13 @@
     box-sizing: border-box;
 }
 
-/*Debug*/
-
-.debug aside{
-    background-color: black;
-}
-
 /*Regole CSS*/
 
 :root{
     --bg-color-primary:rgb(27,114,232);
     --bg-color-secondary:rgb(22,88,180);
     --bg-color-cnt:rgb(248,249,250);
+    --bg-color-aside:rgb(7,32,54);
 }
 
 header{
@@ -25,6 +20,8 @@ header{
 aside{
     width: 60px;
     height: calc(100vh - 70px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color:var(--bg-color-aside);
 }
 
 #cnt{
