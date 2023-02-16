@@ -57,12 +57,9 @@ aside nav li:hover{
     width: 50%;
 }
 
-
-
-
-
-
-
+.offcanvas.offcanvas-end.mediaquery-width{
+    width: 100%;
+}
 
 /*Regole Responsive*/
 
@@ -71,7 +68,6 @@ aside nav li:hover{
     aside{
         width: 150px;
     }
-    
     
     #cnt{
         width: calc(100% - 150px);
@@ -84,5 +80,9 @@ aside nav li:hover{
     #row-2{
         width: 40%;
     }
-    
+
+    .offcanvas.offcanvas-end.mediaquery-width{
+        width: 500px;
+    }
+
 }
